@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font awesome-->
+    <script src="https://kit.fontawesome.com/26aafe571c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Easy Image Editor</h1>
+        <div class="innerwrapper">
+            <div class="buttons">
+                <h3>filters</h3>
+                <div class="gridcontainer">
+                         <button class="active">Brightness</button>
+                         <button>Saturation</button>
+                         <button>Inversion</button>
+                         <button>Grayscale</button>
+                </div>
+                <div class="values">
+                    <p class="word">Brightness</p>
+                    <p class="percent"><span>50</span>%</p>
+                </div>
+                <input type="range" max="100" value="50">
+                <h3>Rotate & Flip</h3>
+                <div class="gridcontainer2">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                    <i class="fa-solid fa-right-left"></i>
+                    <i class="fa-solid fa-up-down"></i>
+                </div>
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/2529158/pexels-photo-2529158.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+        </div>
+        <div class="lastbuttons">
+            <button>Reset filters</button>
+            <div class="choosesave">
+                <button><input type="file" class="chooseFile" value="heyhe"></button>
+                <button>save image</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
